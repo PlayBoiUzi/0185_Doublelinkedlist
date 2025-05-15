@@ -114,6 +114,31 @@ class Node
                     if (START != NULL)
                         START->prev = NULL; // Step 2b: START.prev = NULL
                 }
+                else
+                {
+                    // Step 3: Link previous node to of current 
+                    current->prev->next = current->next;
+
+                    // Step 4: if current is not the last node
+                    if (current->next != NULL)
+                        current->next->prev = current->prev;
+                }
+
+                // Step 5: Delete the node
+                delete current;
+                cout << "Record with roll number " << rollNo << " deleted" << endl;
+                
+            }
+
+            void traverse()
+            {
+                if (START == NULL)
+                {
+                    cout << "\nList is empty" << endl;
+                    return;
+                }
+                // Step 1: Mark first node as currentNode
+                Node *currentNode = START;
                 
                 
                 
