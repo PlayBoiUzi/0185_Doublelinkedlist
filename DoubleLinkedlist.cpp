@@ -107,6 +107,13 @@ class Node
                     return;
                 }
 
+                // Step 2: If node is at the beginning
+                if (current == START)
+                {
+                    START = current->next; // Step 2a: START = START.next
+                    if (START != NULL)
+                        START->prev = NULL; // Step 2b: START.prev = NULL
+                }
                 
                 
                 
