@@ -15,4 +15,6 @@ class Node
         private:
             Node *START;
     
-         
+            public:
+            DoubleLinkedList()
+       
