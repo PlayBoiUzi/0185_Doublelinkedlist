@@ -148,8 +148,16 @@ class Node
                  // Step 3: Move to next node
                  currentNode = currentNode->next;
                  i++;
-             }
-         }   
+                }
+         }
+
+         void revtraverse()
+         
+
+         
+    
+    
+    
                 
                 
                    
