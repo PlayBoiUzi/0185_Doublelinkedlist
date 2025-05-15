@@ -145,7 +145,11 @@ class Node
                 while (currentNode != NULL)
                 {
                     cout << i + 1 << ". " << currentNode->noMhs << endl;
-                    
+                 // Step 3: Move to next node
+                 currentNode = currentNode->next;
+                 i++;
+             }
+         }   
                 
                 
                    
