@@ -102,8 +102,12 @@ class Node
                    current = current->next;
 
                 if (current == NULL)
+                {
+                    cout << "\nRoll number not found" << endl;
+                    return;
+                }
+
                 
-            }
                 
                 
                    
