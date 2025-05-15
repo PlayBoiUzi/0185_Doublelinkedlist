@@ -66,6 +66,11 @@ class Node
                     current = current->next;
                 }
 
+                if (current->next != NULL && current->next->noMhs)
+                {
+                    cout << "\nDuplicate roll numbers not allowed" << endl;
+                    return;
+                }
                 
                    
             
